@@ -85,7 +85,8 @@ CloudFlare.define(
                 var self = this;
                 var twitterHandle = this.config.twitterHandle,
                     censorshipUrl = "http://americancensorship.org/",
-                    githubUrl = "http://mikesofaer.github.com/stop_censorship/",
+                    githubUrl2 = "http://mikesofaer.github.com/stop_censorship/",
+                    githubUrl = "http://vekou.github.com/stop_censorship/",
                     hashtag = "savetheweb",
                     fftfUrl = "http://fightforthefuture.org/pipa",
                     tweetText = function() {
@@ -103,7 +104,7 @@ CloudFlare.define(
                             "Thank you " + fullURL + " for helping defend the Internet from censorship";
 
                     },
-                    box = $("<div class='sopa_popup'><h2>Help Protect Freedom.</h2></div>"),
+                    box = $("<div class='sopa_popup'><h2>Stop the Cybercrime Law</h2></div>"),
                     tweet = $("<button>",{type:'button'}).text("Tweet about it.")
                         .bind("click", function(){
                             self.tweetWindow({
@@ -137,9 +138,7 @@ CloudFlare.define(
                             $.liteDialog('hide');
                         }),
                     actions = [
-                        "<p>There is currently United States legislation under consideration that threatens most of the websites you care about.</p>",
-                        "<p>Call your Senator and say No to PIPA!</p>",
-                        self.senatorDropdown(),
+                        "<p>We call for arms to stop/repeal/revise the Philippine Cybercrime Law</p>",
                         tweet,
                         recensorButton,
                         fftfLink,
